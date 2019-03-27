@@ -10,8 +10,6 @@
 		width: 100%
 		display: flex
 		flex-direction: column
-		align-content: space-between
-		align-items: stretch
 	&__line
 		position: relative
 		margin: 0 0 auto
@@ -22,9 +20,8 @@
 			position: absolute
 			content: "" 
 			top: 50%
-			left: 0
-			width: 100%
-			height: 1px
+			left: 44px
+			right: 0
 			margin-top: -1px
 			border-bottom: 1px dashed $gray 
 	&__sum
@@ -35,9 +32,6 @@
 		color: $gray 
 		+prevent-text
 		text-align: center
-		vertical-align: top
-		background-color: $white 
-		display: inline-block
 	&__body
 		position: relative
 		padding-right: 8px
@@ -45,7 +39,6 @@
 		height: 258px
 		display: flex
 		align-items: flex-end
-		justify-content: space-between
 		border-bottom: 1px solid $black 
 	&__bar
 		flex: 1 1 auto
