@@ -1,0 +1,69 @@
+.chart
+	position: relative
+	padding-left: 42px
+	font-size: 10px
+	&__lines
+		position: absolute
+		top: 0
+		left: 0
+		height: 250px
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-content: space-between
+		align-items: stretch
+	&__line
+		position: relative
+		margin: 0 0 auto
+		&:nth-child(even)
+			&:before
+				border-bottom: 2px dotted #ccc
+		&:before
+			position: absolute
+			content: "" 
+			top: 50%
+			left: 0
+			width: 100%
+			height: 1px
+			margin-top: -1px
+			border-bottom: 1px dashed $gray 
+	&__sum
+		position: relative
+		padding: 0 2px
+		width: 44px
+		line-height: 1.5 
+		color: $gray 
+		+prevent-text
+		text-align: center
+		vertical-align: top
+		background-color: $white 
+		display: inline-block
+	&__body
+		position: relative
+		padding-right: 8px
+		z-index: 1
+		height: 258px
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		border-bottom: 1px solid $black 
+	&__bar
+		flex: 1 1 auto
+		margin-left: 7px
+		background-color: $yellow
+		transition: background-color .3s
+		cursor: pointer
+		+hover
+			background-color: darken($yellow, 5%)
+	&__footer
+		padding: 5px 8px 0 0
+		width: 100%
+		color: $emperor 
+		table-layout: fixed
+		display: table
+	&__month
+		padding-left: 8px
+		vertical-align: top
+		text-align: center
+		+prevent-text
+		display: table-cell

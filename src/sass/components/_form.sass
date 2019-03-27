@@ -1,0 +1,16 @@
+.label
+	color: $gray 
+	& + .select
+		margin-left: 4px
+.select
+	padding-right: 16px
+	appearance: none
+	border: none
+	font-family: $mainFont 
+	+f(14px,400,1.35)
+	letter-spacing: 0.003em 
+	color: #363636 
+	background-color: transparent 
+	background: transparent url("../img/arrow.jpg") right center /11px auto no-repeat
+	&::expand
+		display: none

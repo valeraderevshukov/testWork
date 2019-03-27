@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin card -->
+      <div class="card">
+        <!-- begin head -->
+        <div class="head">
+          <div class="head__col">
+            <h3 class="title">Expenses</h3>
+          </div>
+          <div class="head__col">
+            <div class="form-control">
+              <span class="label">Period:</span>
+              <select name="select-control" id="select-control" class="select">
+                <option value="12">Previous 12 Months</option>
+                <option value="6">Previous 6 Months</option>
+                <option value="3">Previous 3 Months</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- end head -->
+        <!-- begin description -->
+        <div class="description">12-Month Trend</div>
+        <!-- end description -->
+        <!-- begin chart -->
+        <div class="chart">
+          <div class="chart__lines">
+            <div class="chart__line">
+              <div class="chart__sum">$156k</div>
+            </div>
+            <div class="chart__line">
+              <div class="chart__sum">$117k</div>
+            </div>
+            <div class="chart__line">
+              <div class="chart__sum">$78k</div>
+            </div>
+            <div class="chart__line">
+              <div class="chart__sum">$39k</div>
+            </div>
+          </div>
+          <div class="chart__body">
+            <div class="chart__bar" style="height: 60%"></div>
+            <div class="chart__bar" style="height: 50%"></div>
+            <div class="chart__bar" style="height: 60%"></div>
+            <div class="chart__bar" style="height: 90%"></div>
+            <div class="chart__bar" style="height: 40%"></div>
+            <div class="chart__bar" style="height: 30%"></div>
+            <div class="chart__bar" style="height: 30%"></div>
+            <div class="chart__bar" style="height: 30%"></div>
+            <div class="chart__bar" style="height: 50%"></div>
+            <div class="chart__bar" style="height: 50%"></div>
+            <div class="chart__bar" style="height: 60%"></div>
+            <div class="chart__bar" style="height: 10%"></div>
+          </div>
+          <div class="chart__footer">
+            <div class="chart__month">Mar</div>
+            <div class="chart__month">Apr</div>
+            <div class="chart__month">May</div>
+            <div class="chart__month">Jun</div>
+            <div class="chart__month">Jul</div>
+            <div class="chart__month">Aug</div>
+            <div class="chart__month">Sep</div>
+            <div class="chart__month">Oct</div>
+            <div class="chart__month">Nov</div>
+            <div class="chart__month">Dec</div>
+            <div class="chart__month">Jan</div>
+            <div class="chart__month">Feb</div>
+          </div>
+        </div>
+        <!-- end chart -->
+      </div>
+      <!-- end card -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
